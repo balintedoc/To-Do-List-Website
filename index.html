@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-vscode" id="bgVscode"></div>
+
+ 
+  <div id="splashScreen">
+    <img src="splash.png" alt="Splash Image" class="splash-img">
+    <div class="loading-card">
+      <div class="loader"></div>
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  
+  <div id="mainSite" class="hidden">
+    <div class="center-area">
+      <div class="todo-card">
+        <h1 class="title">To-Do List</h1>
+        <div class="input-group">
+          <input id="taskInput" placeholder="Enter a new task" />
+          <button id="addBtn" class="btn primary">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="floating-panel">
+      <div class="panel-header">
+        <h2>Tasks</h2>
+        <button id="clearBtn" class="btn secondary">Clear All</button>
+      </div>
+      <ul id="taskList" class="task-list"></ul>
+      <div class="footer">
+        <span id="count" class="count"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+    
